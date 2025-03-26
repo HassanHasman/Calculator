@@ -23,6 +23,13 @@ operations.addEventListener("click", (e) => {
   }
 });
 
+display.addEventListener("click", () => {
+  if (display.value) {
+    const length = display.value.length;
+    display.setSelectionRange(length, length);
+  }
+});
+
 // display.addEventListener("keydown", (e) => {
 //   if (!(e.key.charCodeAt() >= 43 && e.key.charCodeAt() <= 57)) {
 //     alert("Please enter numerical values.");
